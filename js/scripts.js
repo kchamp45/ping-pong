@@ -2,10 +2,11 @@
 
 //user logic begins
 $(document).ready(function() {
-
   $("#ping").submit(function(event) {
     event.preventDefault();
-
+  $("#btn").click(function() {
+    document.getElementById("ping").reset();
+  })
     var userInput = parseInt($("input#limit").val());
     var number = "";
     var outputs = [];
@@ -34,10 +35,8 @@ $(document).ready(function() {
     outputs.forEach(function(output) {
       var list = $("#finalList").append("<li>" + output + "</li>");
     });
-      $("#output").show();
-      $("#warning").hide();
-        return outputs;
-//business logic ends
 
+    $("#output").show();
+//business logic ends
  });
 });
