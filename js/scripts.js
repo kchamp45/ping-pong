@@ -12,9 +12,12 @@ $(document).ready(function() {
 //business logic begins
     if (userInput >= 1) {
       for (var number = 1; number <= userInput; number++) {
-          outputs.push(number);
+        outputs.push(number);
         }
-      }
+    } else {
+      $("#warning").show();
+    }
+
       for (var i = 0; i < outputs.length; i++) {
         if ((outputs[i] % 3 === 0) && (outputs[i] % 5 === 0)) {
         outputs[i] = "ping-pong";
@@ -24,13 +27,13 @@ $(document).ready(function() {
         outputs[i] = "pong";
         } else {
           outputs[i] = outputs[i];
-          // $("#output").text("Please enter a valid number greater than 1.");
         }
       }
       outputs.forEach(function(output){
       $("#finalList").append("<li>" + output + "</li>");
       $("#output").show();
       $("#ping").hide();
+      $("#warning").hide();
     //business logic ends
 })
  });
