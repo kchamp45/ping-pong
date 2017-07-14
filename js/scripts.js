@@ -2,6 +2,7 @@
 
 //user logic begins
 $(document).ready(function() {
+
   $("#ping").submit(function(event) {
     event.preventDefault();
 
@@ -26,15 +27,17 @@ $(document).ready(function() {
         } else if (outputs[i] % 5 === 0) {
         outputs[i] = "pong";
         } else {
-          outputs[i] = outputs[i];
+        outputs[i] = outputs[i];
         }
       }
-      outputs.forEach(function(output){
-      $("#finalList").append("<li>" + output + "</li>");
+
+    outputs.forEach(function(output) {
+      var list = $("#finalList").append("<li>" + output + "</li>");
+    });
       $("#output").show();
-      $("#ping").hide();
       $("#warning").hide();
-    //business logic ends
-})
+        return outputs;
+//business logic ends
+
  });
- });
+});

@@ -10,10 +10,16 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Ping-Pong Game</h1>
+      <p> Ping-Pong will count up to your number from 1 with the following exceptions:
+        <ul>
+          <li>Numbers divisible by 3 becomes "ping";</li>
+          <li>Numbers divisible by 5 becomes "pong";</li>
+          <li>Numbers divisible by 3 and 5 becomes "ping-pong."</li>
+        </ul>
 
       <form id="ping">
         <div class="form-group">
-          <label for="numbers">Enter a <strong>number</strong> and see the range of numbers with "ping", "pong", and/or "ping-pong":</label>
+          <label for="numbers">Enter a <span id="emphasis">number</span> and see the range of numbers with "ping", "pong", and/or "ping-pong":</label>
           <input id="limit" type="text">
         </div>
 
@@ -21,11 +27,15 @@
       </form>
 
     <div class="well">
-      <p id="warning">Please enter a valid number.</p>
+      <p id="warning">Please enter a <strong>valid number</strong>.</p>
       <p id="output">Here is the result:
         <ul id="finalList">
         </ul>
       </p>
+    </div>
+
+    <div>
+      <img src="img/Ping-Pong Pic.jpg" alt="Picture of Ping-Pong">
     </div>
 
     </div>
