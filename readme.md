@@ -13,12 +13,6 @@ _This application takes a number from a user and returns a range of numbers from
 
 ## Specifications:
 
-  *_The entered number is not 1 or greater;
-    _Input example: 0;
-    _Output example: "Please enter a number greater than or equal to 1";
-  *_The input is not a number:
-    _Input example: "a";
-    _Output example: "Please enter a valid number.";
   *_Count from 1 to the entered number:
     _Input example: 5;
     _Output example: 1, 2, 3, 4, 5;
@@ -37,7 +31,12 @@ _This application takes a number from a user and returns a range of numbers from
   *_Return a range of numbers up to the input number with "ping,", "pong", and/or "ping-pong" inserted when one or more of the conditions are met.
     _Input example: 10
     _Output example: 1, 2, ping, 4, pong, 6, 7, 8, ping, pong.
-
+  *_The entered number is not 1 or greater;
+    _Input example: 0;
+    _Output example: "Please enter a valid number";
+  *_The input is not a number:
+    _Input example: "a";
+    _Output example: "Please enter a valid number.";
 
 
 ## Setup:

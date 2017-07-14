@@ -1,31 +1,37 @@
 
 
-
+//user logic begins
 $(document).ready(function() {
   $("#ping").submit(function(event) {
     event.preventDefault();
 
-    var limit = parseInt($("input#limit").val());
-    var diviser = parseInt($("input#diviser").val());
-    var result = [];
-    var output = "";
+    var userInput = parseInt($("input#limit").val());
+    var number = "";
+    var outputs = [];
 
-    if (limit >= 1) {
-      for (var i = 1; i <= limit; i++)
-      result.push(i);
-      alert(result);
-    }
-  //   } else {
-  //     for (var i = diviser; i <= count; i += diviser) {
-  //       result.push(i);
-  //   }
-  //   }
-  //   result.forEach(function(result) {
-  //   $(".results").append("<li>" + result + "</li>");
-  // });
-  //   $(".output").show();
-  //   $("#count").hide();
-
-
+//business logic begins
+    if (userInput >= 1) {
+      for (var number = 1; number <= userInput; number++) {
+          outputs.push(number);
+        }
+      }
+      for (var i = 0; i < outputs.length; i++) {
+        if ((outputs[i] % 3 === 0) && (outputs[i] % 5 === 0)) {
+        outputs[i] = "ping-pong";
+        } else if (outputs[i] % 3 === 0) {
+        outputs[i] = "ping";
+        } else if (outputs[i] % 5 === 0) {
+        outputs[i] = "pong";
+        } else {
+          outputs[i] = outputs[i];
+          // $("#output").text("Please enter a valid number greater than 1.");
+        }
+      }
+      outputs.forEach(function(output){
+      $("#finalList").append("<li>" + output + "</li>");
+      $("#output").show();
+      $("#ping").hide();
+    //business logic ends
+})
  });
  });

@@ -9,20 +9,20 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping-Pong Game</h1>
+      <h1 class="jumbotron">Ping-Pong Game</h1>
 
       <form id="ping">
-
         <div class="form-group">
-          <label for="numbers">Enter a number and see the range of numbers with "ping", "pong", and/or "ping-pong":</label>
+          <label for="numbers">Enter a <strong>number</strong> and see the range of numbers with "ping", "pong", and/or "ping-pong":</label>
           <input id="limit" type="text">
         </div>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
 
-    <div class="output">
-      <ul>
+    <div id="output" class="well">
+      <p>Here is the result:</p>
+      <ul id="finalList">
       </ul>
     </div>
 
