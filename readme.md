@@ -13,30 +13,30 @@ _This application takes a number from a user and returns a range of numbers from
 
 ## Specifications:
 
-  *_Count from 1 to the entered number:_
-    *_Input example: 5;_
-    *_Output example: 1, 2, 3, 4, 5;_
-  *_Return a range of numbers up to the entered number;_
-    *_Input example: 10;_
-    *-Output example:  1, 2, 3, 4, 5, 6, 7, 8, 9, 10;_
-  *_Return "ping" when the number is divisible by 3:_
-    *_Input example: 3;_
-    *_Output example: 'ping';_
-  *_Return "pong" when the number is divisible by 5:_
-    *_Input example: 5;_
-    *_Output example: 'pong';_
-  *_Return "ping-pong" when the number is divisible by 3 and 5:_
-    *_Input example: 15;_
-    *_Output example: "ping-pong";_
-  *_Return a range of numbers up to the input number with "ping,", "pong", and/or "ping-pong" inserted when one or more of the conditions are met._
-    *_Input example: 10_
-    *_Output example: 1, 2, ping, 4, pong, 6, 7, 8, ping, pong._
-  *_The entered number is not 1 or greater;_
-    *_Input example: 0;_
-    *_Output example: "Please enter a valid number";_
-  *_The input is not a number:_
-    *_Input example: "a";_
-    *_Output example: "Please enter a valid number.";_
+  * _Count from 1 to the entered number:_
+    * _Input example: 5;_
+    * _Output example: 1, 2, 3, 4, 5;_
+  * _Return a range of numbers up to the entered number;_
+    * _Input example: 10;_
+    * -Output example:  1, 2, 3, 4, 5, 6, 7, 8, 9, 10;_
+  * _Return "ping" when the number is divisible by 3:_
+    * _Input example: 3;_
+    * _Output example: 'ping';_
+  * _Return "pong" when the number is divisible by 5:_
+    * _Input example: 5;_
+    * _Output example: 'pong';_
+  * _Return "ping-pong" when the number is divisible by 3 and 5:_
+    * _Input example: 15;_
+    * _Output example: "ping-pong";_
+  * _Return a range of numbers up to the input number with "ping,", "pong", and/or "ping-pong" inserted when one or more of the conditions are met._
+    * _Input example: 10_
+    * _Output example: 1, 2, ping, 4, pong, 6, 7, 8, ping, pong._
+  * _The entered number is not 1 or greater;_
+    * _Input example: 0;_
+    * _Output example: "Please enter a valid number";_
+  * _The input is not a number:_
+    * _Input example: "a";_
+    * _Output example: "Please enter a valid number.";_
 
 
 ## Setup:
